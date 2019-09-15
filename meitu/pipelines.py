@@ -3,7 +3,7 @@
 # Author : CandyMI by 2019.9
 
 # 这里简单的解释一下 self.prefix + '/' + request.meta['dir'] + '/' + request.meta['image_url'].split('/')[-1].
-# 其实就是 '/static/sexy/文章名称/xxx.jpg' 拼接而成的路径.
+# 其实就是 'static/sexy/文章名称/xxx.jpg' 拼接而成的路径.
 
 import scrapy
 from scrapy.exceptions import DropItem
@@ -44,7 +44,7 @@ class KoreaPipeline(ImagesPipeline):
         return self.prefix + '/' + request.meta['dir'] + '/' + request.meta['image_url'].split('/')[-1]
 
 class CoserPipeline(ImagesPipeline):
-    prefix = 'anime'
+    prefix = 'coser'
     def get_media_requests(self, item, info):
         yield scrapy.Request(item['image_url'], meta = item)
 

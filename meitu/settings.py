@@ -8,7 +8,7 @@ SPIDER_MODULES = ['meitu.spiders']
 NEWSPIDER_MODULE = 'meitu.spiders'
 
 # 日志级别
-LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'DEBUG'
 
 # 日志存放文件夹
 LOG_FILE = 'logs/spider.log'
@@ -17,16 +17,14 @@ LOG_FILE = 'logs/spider.log'
 IMAGES_STORE = 'static'
 
 # 需要注册的Item Pipelines
-'''
-ITEM_PIPELINES = {
-    'meitu.pipelines.SexyPipeline': 30,
-    'meitu.pipelines.KoreaPipeline': 30,
-    'meitu.pipelines.JapanPipeline': 30,
-    'meitu.pipelines.MMPipeline': 30,
-    'meitu.pipelines.AnimePipeline': 30,
-    'meitu.pipelines.CoserPipeline': 30,
-}
-'''
+# ITEM_PIPELINES = {
+#     'meitu.pipelines.SexyPipeline': 30,
+#     'meitu.pipelines.KoreaPipeline': 30,
+#     'meitu.pipelines.JapanPipeline': 30,
+#     'meitu.pipelines.MMPipeline': 30,
+#     'meitu.pipelines.AnimePipeline': 30,
+#     'meitu.pipelines.CoserPipeline': 30,
+# }
 
 # 是否开启HTTP缓存
 #HTTPCACHE_ENABLED = True
